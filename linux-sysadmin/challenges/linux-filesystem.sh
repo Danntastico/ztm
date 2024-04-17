@@ -34,3 +34,12 @@ who >users.txt
 cat users.txt
 # Remove the file securely by ovewriting the file 50 times before removing it
 shred -vu -n 50 users.txt
+
+# _____________ Third part of the Challenge _____________
+# Challenge no. 1
+# Using tar, create an archive of /etc in the current directory.
+tar -cvf etc.tar /etc/
+# Using tar, list the items and search for a specific directory
+tar -tvf etc.tar | grep {{directory/to/search}}
+# Using tar, extract the content in the current directory
+tar -xvf etc.tar
