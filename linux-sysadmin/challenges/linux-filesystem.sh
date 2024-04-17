@@ -43,3 +43,9 @@ tar -cvf etc.tar /etc/
 tar -tvf etc.tar | grep {{directory/to/search}}
 # Using tar, extract the content in the current directory
 tar -xvf etc.tar
+
+# Challenge no. 2
+# Using tar, create a compressed archive of /etc using gzip in the current directory.
+tar -czvf compressedarchive.tar.gz {{path_to_target}}
+# Using tar, extract the comprresed archive
+tar -xzvf compressedarchive.tar.gz -C {{path_to_directory}}
